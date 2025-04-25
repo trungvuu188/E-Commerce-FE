@@ -1,0 +1,50 @@
+%flexCenter {
+    display: flex;
+    align-items: center;
+}
+
+.navbar {
+    margin-left: 144px;
+    transition: translate 0.5s;
+
+    &__list {
+        @extend %flexCenter;
+    }
+
+    &__item {
+        &:hover .drop-down {
+            display: block;
+        }
+
+        &:first-child a {
+            padding-left: 0;
+        }
+
+        &:last-child a {
+            padding-right: 0;
+        }
+    }
+
+    &__link {
+        font-size: 1.5rem;
+        font-weight: 500;
+        line-height: 146.667%;
+        height: 50px;
+        @extend %flexCenter;
+        gap: 6px;
+        padding: 0 15px;
+        
+    }
+
+    &__arrow {
+        margin-top: 2px;
+
+        &--left {
+            padding: 40px 40px 10px;
+        }
+    }
+
+    &__item--active &__arrow {
+        rotate: 0deg;
+    }
+}
