@@ -1,0 +1,233 @@
+.check-out {
+    &__container {
+        margin-top: 30px;
+        margin-bottom: 10px;
+    }
+
+    &__breadcums {
+        background: var(--check-out-breadcumb-background);
+    }
+
+    &__content {
+        padding: 30px;
+        background: var(--check-out-background);
+        border-radius: 20px;
+        box-shadow: 0px 20px 60px 10px (--check-out-shadow);
+        margin-bottom: 30px;
+    }
+    &__title {
+        font-size: 1.8rem;
+        font-weight: 500;
+        line-height: 144.444%;
+        max-width: 374px;
+        margin-bottom: 16px;
+
+        &-normal {
+            font-weight: 400;
+        }
+    }
+
+    &__list {
+        margin-top: -30px;
+
+        &-heading {
+            margin-bottom: 30px;
+            font-size: 1.8rem;
+            font-weight: 500;
+            line-height: 144.444%;
+        }
+    }
+
+    &__price {
+        display: inline-block;
+        margin-bottom: 16px;
+        color: #9e9da8;
+        font-size: 1.8rem;
+        font-weight: 500;
+        line-height: 144.444%;
+
+        &-status {
+            color: #67b044;
+        }
+    }
+
+    &__product {
+        display: flex;
+        gap: 30px;
+        padding: 30px 0;
+        border-bottom: 1px solid var(--check-out-border-color);
+    }
+
+    &__item-content {
+        flex: 1;
+        align-self: flex-start;
+        display: flex;
+
+        &-left {
+            flex: 1;
+        }
+        &-right {
+            text-align: right;
+            display: flex;
+            flex-direction: column;
+        }
+    }
+
+    &__thumb {
+        &-img {
+            width: 175px;
+            height: 175px;
+            object-fit: contain;
+
+        }
+    }
+
+    &__control {
+        margin-top: auto;
+        align-self: flex-end;
+        display: flex;
+        align-items: center;
+        gap: 30px;
+        flex-wrap: wrap;
+
+        &-adjust {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            border-radius: 10px;
+            border: 1px solid #d2d1d6;
+            padding: 0 20px;
+            height: 44px;
+        }
+
+        &-title {
+            font-size: 1.5rem;
+            font-weight: 500;
+            line-height: 146.667%;
+        }
+    }
+
+    &__total {
+        font-size: 2.2rem;
+        font-weight: 700;
+        line-height: 145.455%;
+       
+    }
+
+    &__all-btn {
+        height: 68px;
+        min-width: 236px;
+        font-size: 2.2rem;
+        line-height: 145.455%;
+     
+    }
+
+    &__action {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        height: 44px;
+        color: #9e9da8;
+        font-size: 1.6rem;
+        font-weight: 500;
+        line-height: 150%;
+    }
+
+    &__bottom {
+        margin-top: 30px;
+    }
+
+    &__continue-shopping,
+    &__row {
+        font-size: 1.8rem;
+        font-weight: 500;
+        line-height: 144.444%;
+    }
+
+    &__row {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        & + & {
+            margin-top: 10px;
+        }
+
+        &-bold {
+            font-size: 2.2rem;
+            font-weight: 700;
+        }
+    }
+
+    &__seperate {
+        height: 1px;
+        background: #d2d1d6;
+        margin: 30px 0;
+       
+    }
+
+    &__navigation {
+        height: 100%;
+        display: flex;
+        align-items: flex-end;
+        &-favorite {
+            align-items: center;
+            justify-content: space-between;
+            gap: 20px;
+
+        }
+    }
+
+    &__continue-shopping {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+
+        &:hover {
+            .check-out__continue-icon {
+                translate: -5px;
+            }
+        }
+    }
+
+    &__continue-icon {
+        rotate: 90deg;
+        transition: translate 0.3s;
+    }
+
+    &__continue-btn {
+        margin-top: 30px;
+    }
+
+    &__gift {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+
+        &--thumb-warp {
+            padding: 10px;
+            border-radius: 14px;
+            background: rgb(118, 68, 225, 0.1);
+            box-shadow: 0px 20px 60px 10px var(--check-out-shadow);
+        }
+
+        &-title {
+            font-size: 18px;
+            font-weight: 500;
+            line-height: 144.444%;
+        }
+        &-desc {
+            margin-top: 10px;
+            font-size: 1.4rem;
+            line-height: 142.857%;
+        }
+    }
+    &__total-items {
+        font-size: 1.5rem;
+        line-height: 146.667%;
+    }
+
+    &__favorite-action {
+        justify-content: space-between;
+    }
+}

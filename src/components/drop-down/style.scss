@@ -1,0 +1,14 @@
+.drop-down {
+    width: min(1240px, 100%);
+    position: absolute;
+    left: 0;
+    top: 100%;
+    padding-top: 54px;
+
+    &__inner {
+        border-radius: 20px;
+        background: var(--dropdown-bg);
+        box-shadow: 0px 40px 90px 20px var(--dropdown-shadow);
+        padding: 30px;
+    }
+}
